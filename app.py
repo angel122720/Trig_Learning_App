@@ -23,7 +23,7 @@ with col1:
     st.metric("Height (h)", round(h, 2))
 with col2:
     if angle_A < 90:
-                if round(a, 2) < round(h, 2): 
+        if round(a, 2) < round(h, 2): 
             status = "No Triangle"
         elif round(a, 2) == round(h, 2): 
             status = "One Right Triangle"
