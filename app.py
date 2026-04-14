@@ -24,7 +24,7 @@ with col1:
 with col2:
     if angle_A < 90:
         if round(a, 2) < round(h, 2): 
-        status = "No Triangle"
+            status = "No Triangle"
         elif round(a, 2) == round(h, 2): 
             status = "One Right Triangle"
         elif a >= b: 
