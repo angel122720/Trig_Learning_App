@@ -23,10 +23,15 @@ with col1:
     st.metric("Height (h)", round(h, 2))
 with col2:
     if angle_A < 90:
-        if a < h: status = "No Triangle"
-        elif a == h: status = "One Right Triangle"
-        elif a >= b: status = "One Triangle"
-        else: status = "Ambiguous Case (2 Triangles)"
+                if round(a, 2) < round(h, 2): 
+            status = "No Triangle"
+        elif round(a, 2) == round(h, 2): 
+            status = "One Right Triangle"
+        elif a >= b: 
+            status = "One Triangle"
+        else: 
+            status = "Ambiguous Case (2 Triangles)"
+
     else:
         status = "One Triangle" if a > b else "No Triangle"
     st.metric("Outcome", status)
